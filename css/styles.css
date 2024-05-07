@@ -1,0 +1,134 @@
+:root {
+  --bg-lig: #918f8f;
+  --bg-lig-2: #d8e3ec;
+  --c-l: #333333;
+  --bg-drk: #212121;
+  --bg-drk-2: #a8a8a8;
+  --c-d: #f5f5f5;
+  --bg-grama: #7ac74c;
+  --bg-veneno: #df68dd;
+  --bg-fogo: #ee8130;
+  --bg-agua: #6390f0;
+  --bg-inseto: #a6b91a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+main {
+  padding: 2rem;
+}
+
+.clr-l {
+  color: var(--c-l);
+}
+.bg-l {
+  background-color: var(--bg-lig);
+}
+.bg-l-2 {
+  background-color: var(--bg-lig-2);
+}
+.clr-d {
+  color: var(--c-d);
+}
+.bg-d {
+  background-color: var(--bg-drk);
+}
+.bg-d-2 {
+  background-color: var(--bg-drk-2);
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+}
+header .container {
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.logo,
+.botao-dm {
+  width: 2rem;
+  height: 2rem;
+}
+
+main article {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.card {
+  width: 200px;
+  height: 324px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+}
+.titulo {
+  margin: 1rem auto 0;
+  padding: 0.6rem;
+  font-weight: bold;
+  border: 1px solid var(--c-l);
+  border-radius: 0.5rem;
+}
+.bucket {
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem auto;
+}
+.sprite {
+  width: 90px;
+  height: 90px;
+  justify-self: center;
+}
+.tipo {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.tipo span {
+  border-radius: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  padding: 0.8rem 0.6rem;
+  font-weight: bold;
+}
+.grama {
+  background-color: var(--bg-grama);
+}
+.veneno {
+  background-color: var(--bg-veneno);
+}
+.fogo {
+  background-color: var(--bg-fogo);
+}
+.agua {
+  background-color: var(--bg-agua);
+}
+.inseto {
+  background-color: var(--bg-inseto);
+}
+.text {
+  height: 70px;
+  margin: 0 1rem 0.5rem;
+  font-weight: bold;
+}
+.text p {
+  max-height: 100%;
+  overflow-y: scroll;
+}
