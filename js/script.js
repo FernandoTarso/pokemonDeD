@@ -1,6 +1,11 @@
 const botao = document.querySelector("header button");
+let darkMode = localStorage.getItem("dark_mode_on");
 
-function cacarElementos() {
+if (darkMode) {
+  darkModeToggle();
+}
+
+function darkModeToggle() {
   document.querySelector(".bg-l").classList.toggle("bg-d");
 
   const cards = document.querySelectorAll(".bg-l-2");
@@ -17,10 +22,15 @@ function cacarElementos() {
   let icon = bImg.getAttribute("src");
   if (icon === "./img/sun.png") {
     bImg.setAttribute("src", "./img/moon.png");
+    localStorage.setItem("dark_mode_on", "dmOn");
+    darkMode = localStorage.getItem("dark_mode_on");
+    console.log(darkMode);
   }
   if (icon === "./img/moon.png") {
     bImg.setAttribute("src", "./img/sun.png");
+    darkMode = localStorage.setItem("dark_mode_on", "");
+    console.log(darkMode);
   }
 }
 
-botao.addEventListener("click", cacarElementos);
+botao.addEventListener("click", darkModeToggle);
