@@ -1,5 +1,5 @@
 const botao = document.querySelector("header button");
-let darkMode = localStorage.getItem("dark_mode_on");
+let darkMode = localStorage?.getItem("dark_mode_on");
 
 if (darkMode) {
   darkModeToggle();
